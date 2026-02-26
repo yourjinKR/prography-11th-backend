@@ -110,7 +110,7 @@ cd backend
 
 ### System Design Architecture
 
-![image](docs\system-architecture-design.svg)
+![image](docs\architecture.png)
 
 과제 요구사항 중 `이상적인 아키텍처`라는 언급이 가장 저에게 어려움을 줬습니다.
 
