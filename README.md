@@ -112,18 +112,15 @@ cd backend
 
 ![image](docs/architecture.png)
 
-과제 요구사항 중 `이상적인 아키텍처`라는 언급이 가장 저에게 어려움을 줬습니다.
-
-과연 `이상적 아키텍처`라는 것이 존재할까? 라는 근본적인 의문점을 가졌기 때문입니다.
-
-아직 아키텍처에 대한 이해도는 높지 않았기에 **협력**을 기준으로 이와 같은 구조를 설계 했습니다.
-
+과제 요구사항 중 `이상적인 아키텍처`라는 언급이 가장 저에게 어려움을 줬습니다.  
+과연 `이상적 아키텍처`라는 것이 존재할까? 라는 근본적인 의문점을 가졌기 때문입니다.  
+아직 아키텍처에 대한 이해도는 높지 않았기에 **협력**을 기준으로 이와 같은 구조를 설계 했습니다.  
 자세한 내용은 [해당 문서](/docs/SYSTEM_ARCHITECTURE.md)를 참고해주시면 감사하겠습니다.
 
 ### 기타 문서
 
+- 고민했던 점: [docs/RETROSPECTIVE.md](docs/RETROSPECTIVE.md)
+
 - AI 사용 내역: [docs/AI_USAGE.md](docs/AI_USAGE.md)
 
 - 스펙 정합성 점검 기록: [docs/spec-alignment-issues.md](docs/spec-alignment-issues.md)
-
-- 고민했던 점: [docs/RETROSPECTIVE.md](docs/RETROSPECTIVE.md)
