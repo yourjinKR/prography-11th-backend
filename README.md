@@ -1,7 +1,5 @@
 # prography-11th-backend
 
-안녕하세요, 프로그라피 11기 지원자 유어진입니다.
-
 - [기술스택](#1-기술-스택)
 - [실행 방법](#2-실행-방법)
 - [기본 설정](#3-기본-설정)
@@ -20,6 +18,11 @@
 ## 2. 실행 방법
 ### 2.1 요구 사항
 - JDK 17 이상
+- Docker: 선택 사항 (로컬 실행에 필수 아님)
+
+현재 백엔드는 `H2 in-memory DB`를 사용하므로 Docker 컨테이너 없이 실행 가능합니다.  
+`backend/compose.yaml`은 비어 있으며(`services: {}`), Docker Compose 미사용 환경에서도 `bootRun`으로 실행됩니다.
+또한 `spring-boot-docker-compose` 의존성을 제거하여 IntelliJ 실행 시 Docker 엔진 상태와 무관하게 기동됩니다.
 
 ### 2.2 애플리케이션 실행
 ```bash
@@ -31,6 +34,19 @@ Windows:
 ```powershell
 cd backend
 .\gradlew.bat bootRun
+```
+
+포트 충돌 시(기본: `8080`) 아래처럼 다른 포트로 실행할 수 있습니다.
+
+```bash
+cd backend
+./gradlew bootRun --args='--server.port=8081'
+```
+
+Windows:
+```powershell
+cd backend
+.\gradlew.bat bootRun --args="--server.port=8081"
 ```
 
 ### 2.3 테스트 실행
